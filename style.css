@@ -1,0 +1,516 @@
+/* Fonts */
+
+@font-face {
+    font-family: "notera";
+    src: url("./assets/fonts/notera.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "garamond";
+    src: url("./assets/fonts/GARA.TTF");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "garamond italic";
+    src: url("./assets/fonts/GARAIT.TTF");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.notera {
+    font-family: 'notera';
+}
+
+.garamond {
+    font-family: 'garamond';
+}
+
+.times {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.icons {
+    font-size: 1.4em;
+}
+
+.icons a {
+    text-decoration: none;
+    color: #143;
+}
+
+.icons a:hover {
+    color: #7e7e7e;
+}
+
+
+/* scrollbar shit */
+
+::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+    /* border-right-style: solid;
+    border-left-style: solid;
+    border-right-color: #6F248F;
+    border-left-color: #6F248F; */
+    width: 1em;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #365;
+}
+
+img {
+    margin: 0;
+}
+
+a {
+    color: #5c5c5c;
+}
+
+a:hover {
+    color: #222;
+}
+
+#about a:hover {
+    color: #222;
+    transition: 0.5s;
+}
+
+
+/* Styling Starts Here */
+
+.ez {
+    color: #222;
+    text-decoration: none;
+}
+
+.right {
+    text-align: right;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: #fff;
+    background: #3d3d3d;
+}
+
+::selection {
+    color: #fff;
+    background: #3d3d3d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.icons i {
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+}
+
+footer {
+    margin-top: 1em;
+}
+
+.center {
+    text-align: center;
+}
+
+.flexnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 0 0 0;
+}
+
+nav {
+    transition: top 0.3s;
+    top: 0;
+}
+
+.normal {
+    display: flex;
+}
+
+.normal a {
+    margin-left: 1em;
+    font-family: 'times new roman';
+}
+
+nav ul a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.responsive-br {
+    display: none;
+}
+
+.logo {
+    font-family: 'notera';
+    font-size: 3em;
+}
+
+.subtitle {
+    font-family: 'garamond italic';
+    font-size: 2.2em;
+}
+
+.main-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4.5em;
+}
+
+#mainbody {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.me {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.text-item {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+img {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.line {
+    height: 2px;
+    width: 20px;
+    background-color: #222;
+    margin-bottom: 3px;
+}
+
+.navico li {
+    list-style-type: none;
+    margin: 0;
+}
+
+.navico {
+    display: none;
+}
+
+.navico:hover {
+    cursor: pointer;
+}
+
+.closeimg {
+    width: 3vw;
+    transition: 0.5s;
+}
+
+.fixedcon {
+    -webkit-transform: translateZ(500);
+}
+
+#nav-hid {
+    display: none;
+    /* right: 0em;
+    top: 5em; */
+    /* right: 7vw; */
+    top: 13vw;
+    right: 0;
+    color: #222;
+    /* display: flex; */
+    justify-content: right;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
+    padding: 1em 2em;
+    transition: top 0.3s;
+    position: absolute;
+}
+
+#nav-hid ul li {
+    list-style-type: none;
+    margin: 0;
+}
+
+#nav-hid a {
+    color: #222;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#cross {
+    color: #222;
+    font-family: 'notera';
+    font-size: 2em;
+    text-align: center;
+    display: none;
+}
+
+.arhaan {
+    color: #222;
+}
+
+.arhaan:hover {
+    color: #7e7e7e;
+}
+
+
+/* All responisve stuff */
+
+.none {
+    display: none;
+}
+
+@media (max-width: 750px) {
+    /* navbar stuff */
+    .normal {
+        display: none;
+    }
+    .logo {
+        font-size: 8vw;
+    }
+    .navico {
+        display: block;
+    }
+    nav {
+        position: fixed;
+        z-index: 500;
+        background-color: #fff;
+        width: 100%;
+    }
+    .inLanding {
+        margin-top: 15em;
+    }
+    .everything {
+        margin-top: 18vw;
+    }
+    /* main body stuff */
+    #mainbody {
+        align-items: flex-start;
+        margin-top: 4vh;
+        height: 60vh;
+    }
+    .responsive-br {
+        display: block;
+    }
+    .main-title {
+        font-size: 10vw;
+    }
+    .subtitle {
+        font-size: 9vw;
+    }
+    .resp-align {
+        text-align: center;
+    }
+    footer {
+        text-align: center;
+    }
+    footer i {
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .flex {
+        flex-direction: column;
+    }
+    #about {
+        margin-top: 1em;
+    }
+    .text-item {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    #about img {
+        width: 85%;
+    }
+    .mmh.five.columns,
+    .mmh.seven.columns {
+        width: 100%;
+    }
+    .about-item p {
+        text-align: center;
+    }
+    #about {
+        flex-direction: column;
+    }
+    .text-item {
+        text-align: left;
+    }
+    .resp-align2 {
+        text-align: center;
+    }
+    .about-container {
+        height: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-title {
+        font-size: 13vw;
+    }
+    .subtitle {
+        font-size: 11.7vw;
+    }
+}
+
+.animatebro {
+    transition: 1s ease-in;
+}
+
+.masonry {
+    columns: 1;
+    column-gap: 5px;
+}
+
+.masonry-item {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .masonry {
+        columns: 2;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .masonry {
+        columns: 3;
+    }
+}
+
+.masonry-item {
+    overflow: hidden;
+}
+
+.masonry img {
+    width: 100%;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+
+/* Trick */
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+    padding: 1em 0;
+}
+
+@media (prefers-color-scheme: dark) {}
+
+#cross {
+    font-size: 1em;
+}
+
+#lines {
+    font-size: 0.5em;
+}
+
+.lines {
+    display: inline-block;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('assets/fonts/icomoon.eot?dwpyo3');
+    src: url('assets/fonts/icomoon.eot?dwpyo3#iefix') format('embedded-opentype'), url('assets/fonts/icomoon.ttf?dwpyo3') format('truetype'), url('assets/fonts/icomoon.woff?dwpyo3') format('woff'), url('assets/fonts/icomoon.svg?dwpyo3#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-close:before {
+    content: "\e901";
+}
+
+.icon-menu:before {
+    content: "\e900";
+}
+
+nav a {
+    color: #222;
+}
+
+nav a:hover {
+    color: #7e7e7e;
+}
